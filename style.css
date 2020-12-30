@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color-text-primary: #131313;
+    --color-title-primary: #f2f2f2;
+    --color-title-secondary: #f7f7f7;
+}
+
+body {
+    background-color: #fff;
+}
+
+.contaAlert {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-title-secondary);
+    width: 400px;
+    height: 300px;
+    z-index: 99999;
+}
+
+.agencia {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(115, 27, 197) 30%, #502050 90%);
+}
+
+.agencia h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    color: var(--color-title-primary);
+    margin: 3rem;
+}
+
+.contentConta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 2rem;
+    border-bottom: 4px solid #ffff;
+}
+
+.contentConta p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--color-title-secondary);
+}
+
+.contentConta-dados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.contentConta-dados label {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #f5f5f5;
+    margin-right: 1rem;
+}
+
+.contentConta label.active {
+    color: #0ad46f;
+}
+
+.contentConta-dados input,
+.contentMovimentos input {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #131313;
+    padding: 4px;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.contentConta-dados input {
+    border: none;
+    width: 220px;
+}
+
+.contentMovimentos input {
+    border: 1px solid #252525a9;
+    width: 176px;
+}
+
+.contentConta input:focus,
+.contentMovimentos input:focus {
+    border: 3px solid rgb(50, 197, 241);
+}
+
+.contentExtrato {
+    width: 80%;
+}
+
+.contentExtrato h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: var(--color-title-primary);
+}
+
+.contentExtratoList {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.list {
+    list-style: none;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: var(--color-title-secondary);
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.459);
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 1.1rem;
+}
+
+.list li p:nth-child(1) {
+    text-transform: uppercase;
+}
+
+.contentMovimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.658);
+    color: #2f2e2e;
+    line-height: 60px;
+    margin: 2rem 0;
+}
+
+.contentMovimentos h3 {
+    border-bottom: 2px solid rgb(138, 15, 138);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.6rem;
+}
+
+.contentMovimentos label {
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-bottom: 1px solid rgb(189, 11, 189);
+    margin-right: 0.2rem;
+    margin-bottom: 0.6rem;
+    padding: 0 10px;
+}
+
+.contentMovimentos h4 {
+    text-align: center;
+    color: #db3728;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+    padding: 4px;
+    border-radius: 5px;
+    width: 90%;
+    line-height: 20px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem;
+}
+
+.result input {
+    width: 122px;
+}
+
+.confirm {
+    background-color: rgb(15, 179, 102);
+    box-shadow: 0 5px 100px rgb(11, 91, 116);
+    border: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #f5f5f5;
+    padding: 8px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.infoConta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.infoConta h2 {
+    color: var(--color-title-primary);
+    font-weight: 500;
+    letter-spacing: 1.4px;
+}
+
+.infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 1rem;
+}
+
+.infos p {
+    font-size: 1.2rem;
+    background-color: var(--color-title-secondary);
+    color: var(--color-text-primary);
+    border-radius: 6px;
+    padding: 8px;
+}

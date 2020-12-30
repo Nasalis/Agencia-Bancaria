@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Bancária</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="agencia">
+        <h1>Agência Bancária</h1>
+        <div class="contentConta">
+            <p>Digite o número da conta</p>
+            <div class="contentConta-dados">
+                <label for="contaNumero">Conta:</label>
+                <input type="text" name="contaNumero" class="contaNumero" placeholder="Digite o número da conta">
+            </div>
+        </div>
+
+        <div class="contentExtrato">
+            <h3>Todos os Extratos</h3>
+            <div class="contentExtratoList">
+                <ul class="list">
+                    <li>
+                        <p>Ação</p>
+                        <p>Valor</p>
+                        <p>Saldo</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contentMovimentos">
+            <h3>Administre a sua conta</h3>
+            <div class="movimentos">
+                <label for="acao">Movimento:</label>
+                <input type="text" name="acoes" id="acao" list="acoes" class="acoes" placeholder="Indique uma ação">
+                <datalist id="acoes">
+                    <option value="Depositar">
+                    <option value="Débito">
+                    <option value="Tarifa">
+                    <option value="Saque">
+                    <option value="Extornar">
+                </datalist>
+            </div>
+            <div class="result">
+                <div class="resultInput">
+                    <label for="valor">Insira um Valor:</label>
+                    <input type="number" name="valor"  class="valor" placeholder="Ex.: 100/100.00">
+                </div>
+            </div>
+            <button class="confirm " >Clique aqui</button>
+        </div>
+
+        <div class="infoConta">
+            <h2>Detalhes da Conta</h2>
+            <div class="infos">
+                <p class="infosConta">Conta:</p>
+                <p class="infosSaldo">Saldo:</p>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
